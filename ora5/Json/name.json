@@ -1,0 +1,26 @@
+{
+    "count": 72860,
+    "name": "nagy",
+    "country": [
+        {
+            "country_id": "HU",
+            "probability": 0.5359943866747947
+        },
+        {
+            "country_id": "SK",
+            "probability": 0.036223014445998694
+        },
+        {
+            "country_id": "EG",
+            "probability": 0.028159634739698833
+        },
+        {
+            "country_id": "RO",
+            "probability": 0.026912516454259728
+        },
+        {
+            "country_id": "AT",
+            "probability": 0.01302363319436516
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#" ,
+    "definitions": {
+        "error": {
+            "type": "object" ,
+            "properties": {
+                "error":{
+                    "type": "string"
+                }
+            },
+            "required": ["error"],
+            "additionalItems": true
+        },
+        "name": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "name":{
+                    "type": "string"
+                },
+                "country":{
+                    "type": "string",
+                    "items": {
+                        "type":"object",
+                        "properties": {
+                            "country_id":{
+                                "type":"string",
+                                "pattern": "^[A-Z](2)$"
+                            },
+                            "probability":{
+                                "type": "number",
+                                "minimum": 0,
+                                "maximum":1
+                            }
+                        },
+                        "required": ["country_id", "probability"],
+                        "additionalProperties": false
+                    }
+                }
+            }
+        },
+        "arrayOfNames":{
+            "type":"array",
+            "items": {
+                "$ref": "#/definitions/name"
+            }
+        }
+    },
+    "oneOf": [
+        {
+            "$ref": "#/definitions/error"
+        },
+        {
+            "$ref": "#/definitions/name"
+        },
+        {
+            "$ref": "#/definitions/arrayOfNames"
+        }
+    ]
+}

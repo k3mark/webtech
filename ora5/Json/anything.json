@@ -1,0 +1,17 @@
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "identity", 
+    "Host": "httpbin.org", 
+    "User-Agent": "HTTPie/3.2.3", 
+    "X-Amzn-Trace-Id": "Root=1-67079bb7-240746124f7280dd7b59d58d"
+  }, 
+  "json": null, 
+  "method": "GET", 
+  "origin": "193.6.168.194", 
+  "url": "https://httpbin.org/anything"
+}

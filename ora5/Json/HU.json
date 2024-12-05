@@ -1,0 +1,55 @@
+[
+    {
+        "startDate": "2023-12-30",
+        "endDate": "2024-01-01",
+        "dayCount": 3,
+        "needBridgeDay": false,
+        "bridgeDays": []
+    },
+    {
+        "startDate": "2024-03-15",
+        "endDate": "2024-03-17",
+        "dayCount": 3,
+        "needBridgeDay": false,
+        "bridgeDays": []
+    },
+    {
+        "startDate": "2024-03-29",
+        "endDate": "2024-04-01",
+        "dayCount": 4,
+        "needBridgeDay": false,
+        "bridgeDays": []
+    },
+    {
+        "startDate": "2024-05-18",
+        "endDate": "2024-05-20",
+        "dayCount": 3,
+        "needBridgeDay": false,
+        "bridgeDays": []
+    },
+    {
+        "startDate": "2024-08-17",
+        "endDate": "2024-08-20",
+        "dayCount": 4,
+        "needBridgeDay": true,
+        "bridgeDays": [
+            "2024-08-19"
+        ]
+    },
+    {
+        "startDate": "2024-11-01",
+        "endDate": "2024-11-03",
+        "dayCount": 3,
+        "needBridgeDay": false,
+        "bridgeDays": []
+    },
+    {
+        "startDate": "2024-12-25",
+        "endDate": "2024-12-29",
+        "dayCount": 5,
+        "needBridgeDay": true,
+        "bridgeDays": [
+            "2024-12-27"
+        ]
+    }
+]

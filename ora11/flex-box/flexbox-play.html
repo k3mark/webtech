@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Play</title>
+    <link rel="stylesheet" href="flexbox-play.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="controls" >
+        <div>
+            <button id="add-item-button">Add item</button>
+        </div>
+        <div>
+            <button id="remove-item-button">Remove item</button>
+        </div>
+        <div>
+            <label for="flex-direction-select">Flex direction</label>
+            <select id="flex-direction-select">
+                <option value="unset">--Select an option--</option>
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+            </select>
+        </div>
+        <div>
+            <label for="justify-content-select">Justify-content</label>
+            <select id="justify-content-select">
+                <option value="unset">--Select an option--</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-beetwen">space-beetwen</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+        </div>
+        <div>
+            <label for="align-item-select">Align items</label>
+            <select id="align-item-select">
+                <option value="unset">--Select an option--</option>
+                <option value="center">center</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+            </select>
+        </div>
+    </div>
+    <script src="flexbox-play.js"></script>
+</body>
+</html>

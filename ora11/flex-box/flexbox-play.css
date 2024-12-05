@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    gap: 1em;
+    
+}
+
+#container, #controls{
+    background-color: aliceblue;
+    border: medium solid black;
+}
+
+#container{
+    height: 600px;
+    width: 600px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#controls{
+    padding: 1em;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#controls button{
+    width: 100%;
+    padding: 0.5em;
+}
+
+#controls > div{
+    font-family: monospace;
+}
+
+#controls label::after{
+    content: ":";
+}
+
+#container > div.item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container > div.item:nth-child(odd){
+    background-color: coral;
+}
+
+#container > div.item:nth-child(even){
+    background-color: gold;
+}
+

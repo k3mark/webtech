@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roxforti regisztrációs űrlap</title>
+    <link rel="stylesheet" href="hogwarts-form.css">
+</head>
+
+<body>
+    <h1>Roxforti regisztrációs űrlap</h1>
+    <form  class="fancy-form" action="https://webhook.site/0a0bc33c-62b6-4c04-942d-9f5decf1fc20" method="post"
+        enctype="multipart/form-data">
+        <div>
+            <label for="name">Név</label>
+            <input type="text" name="name" id="name" required placeholder="Pl.: Harry James Potter ">
+        </div>
+        <div>
+            <label for="dob">Születési dátum</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="house">Ház</label>
+            <select name="house" id="house">
+                <option value="">--Válassz egy lehetőséget--</option>
+                <option value="griffendel" data-primary-color="red">Griffendél</option>
+                <option value="hugrabug" data-primary-color="yellow">Hugrabug</option>
+                <option value="hollohat" data-primary-color="blue">Hollóhát</option>
+                <option value="mardekar" data-primary-color="green">Mardekár</option>
+            </select>
+        </div>
+        <div>
+            <label for="has-pet">Kijelentem hogy van kisállatom</label>
+            <input type="checkbox" name="has-pet" id="has-pet" value="yes">
+            <fieldset class="conditional">
+                <legend>Kisállat</legend>
+                <label>Faj <input type="text" name="pet-species" placeholder="pl. Bagoly"></label>
+                <label>Név <input type="text" name="pet-name" placeholder="pl. Hedwig"></label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="number-of-wands">Varázspálcák száma</label>
+            <input type="number" name="number-of-wands" id="number-of-wands" min="1"  value="1" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" pattern=".*hogwarts\.ac\.uk"
+                title="Kizárólag @hogwarts.ac.uk végződésű email cím adható meg." placeholder="pl. hjp@hogwarts.ac.uk">
+        </div>
+        <div>
+            <label for="comments">Megjegyzés</label>
+            <textarea name="comments" id="comments" maxlength="200" rows="5"
+                placeholder="pl. Benne szeretnék lenni a kvidlin csapatban"></textarea>
+        </div>
+        <div>
+            <label for="photo">Fénykép</label>
+            <input type="file"  name="photo" id="photo" accept="image/jpeg.image/">
+        </div>
+        <div>
+            <button type="submit">Küldés</button>
+        </div>
+        <script>
+            const form = document.querySelector('form.fancy-form');
+            form.house.addEventListener('change', (event) =>{
+                const color = form.house.options[form.house.selectedIndex].dataset.primaryColor;
+                console.log("color: "+ color);
+                document.body.style.backgroundColor = color;
+            })
+        </script>
+    </form>
+</body>
+</html>

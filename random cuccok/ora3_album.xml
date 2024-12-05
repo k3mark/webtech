@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE album SYSTEM "ora3_album.dtd">
+<?xml-stylesheet href="ora3_album.css" type="text/css"?>
+<album>
+    <artist>Steven Wilson</artist>
+    <title> Hand. Cannot. Erase.</title>
+    <year>2015</year>
+    <tracks>
+        <track>
+            <title>First Regret</title>
+            <lenght>2:01</lenght>
+        </track>
+        <track>
+            <title>3 Years Older</title>
+            <lenght>10:18</lenght>
+        </track>
+        <track>
+            <title>Hand Cannot Erase</title>
+            <lenght>4:13</lenght>
+        </track>
+        <track>
+            <title>Perfect Life</title>
+            <lenght>4:43</lenght>
+        </track>
+        <track>
+            <title>Routine</title>
+            <lenght>8:58</lenght>
+        </track>
+        <track>
+            <title>Home Invasion</title>
+            <lenght>6:24</lenght>
+        </track>
+        <track>
+            <title>Regret #9</title>
+            <lenght>5:01</lenght>
+        </track>
+        <track>
+            <title>Transience</title>
+            <lenght>2:45</lenght>
+        </track>
+        <track>
+            <title>Ancestral</title>
+            <lenght>13:30</lenght>
+        </track>
+        <track>
+            <title>Happy Returns</title>
+            <lenght>6:00</lenght>
+        </track>
+        <track>
+            <title>Ascendant Here OnâŚ</title>
+            <lenght>1:54</lenght>
+        </track>
+    </tracks>
+
+</album>

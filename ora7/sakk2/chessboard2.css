@@ -1,0 +1,23 @@
+@import "chessboard1.css";
+
+table.chessboard td.blackPawn::before{
+    content: "\265f";
+}
+
+table.chessboard td.whitePawn::before{
+    content: "\2659";
+}
+
+table.chessboard td.blackRook::before{
+    content: "\265c";
+}
+
+
+table.chessboard td.whiteRook::before{
+    content: "\2656"
+}
+
+#currentSquare{
+    text-align: center;
+    font-size: small;
+}

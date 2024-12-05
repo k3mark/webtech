@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hogwarts Registration Form</title>
+    <link rel="stylesheet" href="hogwarts-form.css">
+</head>
+<body>
+    <h1>Hogwarts Registration Form</h1>
+    <form class="fancy-form" method="post" enctype="multipart/form-data"
+        action="">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="e.g., Harry James Potter ">
+        </div>
+        <div>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="house">House</label>
+            <select name="house" id="house" required>
+                <option value="">--Please choose an option--</option>
+                <option value="gryffindor">Gryffindor</option>
+                <option value="hufflepuff">Hufflepuff</option>
+                <option value="ravenclaw">Ravenclaw</option>
+                <option value="slytherin">Slytherin</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

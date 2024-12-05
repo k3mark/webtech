@@ -1,0 +1,48 @@
+table.chessboard{
+    border-collapse: collapse;
+
+}
+
+table.chessboard th{
+    font-weight: normal;
+}
+
+table.chessboard :is(td,th){
+    border: thin solid red;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.chessboard > tbody> tr:first-child > td{
+    border-top: medium solid black;
+}
+
+table.chessboard > tbody> tr:last-child > td{
+    border-bottom: medium solid black;
+}
+
+table.chessboard > tbody td:first-of-type{
+    border-left: medium solid black;
+}
+
+table.chessboard > tbody td:last-of-type{
+    border-right: medium solid black;
+}
+
+table.chessboard > tbody > tr:nth-child(odd) > tr:nth-last-of-type(odd){
+    background-color: white;
+}
+
+table.chessboard > tbody > tr:nth-child(odd) > tr:nth-last-of-type(even){
+    background-color: lightgray;
+}
+
+table.chessboard > tbody > tr:nth-child(odd) > td:nth-last-of-type(even){
+    background-color: lightgray;
+}
+
+table.chessboard > tbody > tr:nth-child(even) > td:nth-last-of-type(odd){
+    background-color: lightgrey;
+}

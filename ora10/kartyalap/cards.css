@@ -1,0 +1,61 @@
+@charset "UTF-8";
+body {
+  background-color: green;
+}
+
+div.cards {
+  display: flex;
+}
+div.cards > div.card {
+  height: 3.5in;
+  width: 2.5in;
+  background-color: white;
+  margin: 1em;
+  border: medium solid black;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.cards > div.card span.center {
+  font-size: 400%;
+}
+div.cards > div.card span:is(.top-left, .bottom-right) {
+  font-size: 200%;
+  padding: 0.25em;
+}
+div.cards > div.card span.top-left {
+  align-self: flex-start;
+}
+div.cards > div.card span.bottom-right {
+  align-self: flex-end;
+  transform: rotate(0.5turn);
+}
+div.cards > div.card:is([data-suite=hearts], [data-suite=diamonds]) {
+  color: red;
+}
+div.cards > div.card:is([data-suite=spades], [data-suite=clubs]) {
+  color: black;
+}
+div.cards > div.card[data-rank=A] span.rank::before {
+  content: "A";
+}
+div.cards > div.card[data-suite=spades] span.suite::before {
+  content: "♠";
+}
+div.cards > div.card[data-suite=hearts] span.suite::before {
+  content: "♥";
+}
+div.cards > div.card[data-suite=clubs] span.suite::before {
+  content: "♣";
+}
+div.cards > div.card[data-suite=diamonds] span.suite::before {
+  content: "♦";
+}
+
+@media (max-width: 1120px) {
+  div.cards {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=cards.css.map */

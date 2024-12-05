@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        main{
+            display: flex;
+            gap: 1em;
+        }
+        div{
+            border: thin solid black;
+            padding: 1em;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Layout Shift Demonstration</h1>
+    <main>
+        <div>
+            <h2>width and height attributes are present</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dolor exercitationem a voluptatum accusantium pariatur veniam, sed, enim fugit dolore vel, sapiente velit inventore incidunt ipsam libero sint ut earum.</p>
+            <img src="kodim10.png" alt="off-shore sailboat race" height="768" width="512">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut atque voluptatum ex minima culpa voluptate, repellendus cum minus, distinctio veniam quia, rerum tempora accusantium amet! Aliquid eos unde hic non?</p>
+        </div>
+        <div>
+            <h2>width and height attributes are absent</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate quis molestiae, amet quos praesentium officia illum eum fugiat, numquam nobis libero voluptatem? Amet, deserunt maiores sint voluptatibus officia facere?</p>
+            <img src="kodim19.png" alt="lighthouse in Maine" height="768" width="512">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi maxime deserunt, dolore vitae ipsum sapiente quaerat rerum, voluptas voluptatum officia omnis numquam ab alias corrupti! Quisquam esse dolorum amet odit?</p>
+        </div>
+        
+    </main>
+    <footer>
+        <small>The image are taken from the <a href="https://r0k.us/graphics/kodak/">Kodak Lossless True Color Image Suite</a>and are courtesy </small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/**{
+    border: thin solid red;
+   
+}
+*/
+movies{
+    display: block;
+    background-color: aliceblue;
+    font-family: Helvetica, Arial,sans-serif;
+    margin: 1em;
+}
+
+movie{
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 1em;
+    padding: 0.25em;
+}
+
+title{
+    display: none;
+}
+
+title:lang(en){
+    display: inline;
+}
+
+year::before{
+    content: "(";
+}
+
+year::after{
+    content: "):";
+}
+
+genre,rating,movie:hover::after {
+    padding: 0.25em;
+    border-radius: 0.25em;
+    display: inline-block;
+}
+
+genre{
+    background-color: blueviolet;
+    color: white;
+    width: 5em;  
+    text-align: center;
+    
+}
+
+rating {
+    background-color: hotpink;
+    color: white;
+}
+
+rating::after{
+    content: "/10";
+}
+
+votes::before{
+    content: "from ";
+}
+
+votes::after{
+    content: " votes";
+}
+
+movie:is([mpa-rating=R],[mpa-rating=NC-17]) :is(title, year) {
+    color: red;
+}
+
+movie:hover::after{
+    background-color: gold;
+    color: blueviolet;
+    content: "https://www.imdb.com/tt" attr(id);
+}

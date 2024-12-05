@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+*{
+    display: block;
+}
+
+book{
+    counter-reset: chapter-number;
+    font-family: EB Garamond, sans-serif;
+    padding: 0.5em;
+}
+
+author, title{
+    font-family: Anton, sans-serif;
+    text-align: center;
+}
+
+author, chapter > title{
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+book > title{
+    font-size: 4em;
+    border-bottom: thin solid black;
+    text-shadow: 0.1em 0.1em #7f7f7f;
+}
+
+chapter{
+    counter-reset: footnote-number;
+}
+
+chapter > title{
+    text-decoration: underline;
+}
+
+chapter > title::before{
+    content: "Chapter "counter(chapter-number, upper-roman) "\2014\ ";
+    counter-increment: chapter-number;
+}
+
+footnote{
+    display: inline;
+    font-size: 0;
+    vertical-align: top;
+
+}
+
+footnote::before{
+    content: "["counter(footnote-number)"]";
+    counter-increment: footnote-number;
+    font-size: small;
+}
+
+footnote:hover{
+    background-color: tomato;
+    color: white;
+    font-size: large;
+    padding: 0.25em;
+}
+
+footnote:hover::before{
+    font-size: large;
+    padding-right: 0.5em;
+}
+
+para{
+    text-indent: 1em;
+    margin: 0.5em;
+}
+
+title + para{
+    text-indent: 0em;
+}
+
+title + para::first-letter{
+    font-size: 2em;
+    font-family: Rye, sans-serif;
+}
+
+para:hover{
+    background-color: royalblue;
+    color: white;
+}
+

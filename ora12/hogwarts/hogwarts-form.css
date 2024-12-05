@@ -1,0 +1,10 @@
+
+
+form.fancy-form{
+    width: 400px;
+    max-width: 50%;
+}
+
+form.fancy-form div:has(input[type=checkbox]:not(:checked)) + fieldset.conditional{
+    display: none;
+}

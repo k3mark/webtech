@@ -1,0 +1,82 @@
+[
+    {
+        "$schema": "./nationalize_schema-draft-07.json",
+        "count": 6503,
+        "name": "antal",
+        "country": [
+            {
+                "country_id": "HU",
+                "probability": 0.4739510743317898
+                
+            },
+            {
+                "country_id": "RO",
+                "probability": 0.08306216860502008
+            },
+            {
+                "country_id": "SK",
+                "probability": 0.04828805535602645
+            },
+            {
+                "country_id": "RS",
+                "probability": 0.014605646373119112
+            },
+            {
+                "country_id": "AT",
+                "probability": 0.011298087497722695
+            }
+        ]
+    },
+    {
+        "count": 25296,
+        "name": "suzuki",
+        "country": [
+            {
+                "country_id": "JP",
+                "probability": 0.6418616444253915
+            },
+            {
+                "country_id": "US",
+                "probability": 0.007120674396219951
+            },
+            {
+                "country_id": "BR",
+                "probability": 0.006557230945457447
+            },
+            {
+                "country_id": "LC",
+                "probability": 0.005511869625357807
+            },
+            {
+                "country_id": "TH",
+                "probability": 0.0032515460198519687
+            }
+        ]
+    },
+    {
+        "count": 46801,
+        "name": "ivanov",
+        "country": [
+            {
+                "country_id": "BG",
+                "probability": 0.4374556466315992
+            },
+            {
+                "country_id": "RU",
+                "probability": 0.052176538196207795
+            },
+            {
+                "country_id": "UA",
+                "probability": 0.050590555144717574
+            },
+            {
+                "country_id": "BY",
+                "probability": 0.013371186588894078
+            },
+            {
+                "country_id": "RS",
+                "probability": 0.01029130653190162
+            }
+        ]
+    }
+]
