@@ -1,0 +1,8 @@
+span.tld{
+    font-family: monospace;
+}
+
+img.card-img-top{
+    max-height: 15vh;
+    object-fit: contain;
+}
